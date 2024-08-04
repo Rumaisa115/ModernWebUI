@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+      
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Top section */
+        .top-section {
+            background-image: url('abh.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        
+        /* Welcome section */
+        .welcome-section {
+            display: flex;
+            padding: 120px 1px;
+            background-color: rgb(248, 248, 248);
+
+           
+       
+        }
+        
+        .welcome-left {
+            flex: 1;
+            margin-top: -30px;
+            
+          
+        }
+
+        .welcome-left h1 {
+            font-size: 35px;
+            font-family: 'Lato', sans-serif;
+            line-height: 50px;
+            font-weight: 800;
+            text-align: left;
+            margin-left: 300px;
+            margin-right: -300px;
+          
+        }
+        .welcome-left p {
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            line-height: 30px;
+            font-weight: 500;
+            margin-left: 300px;
+            margin-right: -400px;
+            
+          
+        }
+        
+        /* Right column */
+        .welcome-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .welcome-right p {
+            font-size: 13px;
+            font-family: 'Lato', sans-serif;
+            line-height: 30px;
+            font-weight: 500;
+            margin-bottom: 1px;
+            margin-right: 300px;
+            margin-top: -18px;
+            margin-left: -250px;
+        }
+        .welcome-right h2 {
+            font-size: 17px;
+            font-family: 'Lato', sans-serif;
+            line-height: 30px;
+            font-weight: 570;
+            margin-bottom: 20px;
+            margin-right: 300px;
+            margin-top: -100px;
+            margin-left: -350px;
+             
+        }
+
+         
+        
+        .circle-image {
+            width: 20px;
+            height: 20px;
+            background-image: url('circle-image.jpg'); 
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .welcome-right img{
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-right: 300px;
+            margin-top: 320px;
+            margin-left: -565px;
+            
+
+        }
+        .welcome-left img{
+            width: 500px;
+            height: 500px;
+            margin-left: -200px;
+            margin-top: -50px;
+            
+          
+
+        }
+        /* Our Engineers section */
+        .engineers-section {
+            padding: 40px;
+            display: flex;
+            margin-left: 200px;
+        
+
+        }
+        .engineers-section h1 {
+        font-family: 'Lato', sans-serif;
+        margin-bottom: -10px;
+        font-weight: 800;
+        margin-top: 50px;
+        margin-left: 15px;
+
+        }
+        
+        .engineer-card {
+            display: inline-block;
+            width: 300px;
+    margin: 15px;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        margin-top: -30px;
+            border-radius: 5px;
+            padding: 20px;
+  
+            
+        }
+
+        .engineer-card img {
+            width: 100%;
+            height: 300px;
+    margin-top: -20px;
+            margin-bottom: -20px;
+            margin-top: 2px;
+            
+        }
+
+        .engineer-card h1 {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+            margin-left: 20px;
+
+        }
+
+        .engineer-card p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .engineer-card .line {
+            border-top: 1px solid #ccc;
+            margin: 10px 20px;
+        }
+
+        /* Latest News section */
+.latest-news-section {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(248, 248, 248);
+}
+
+.latest-news-section h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.news-card {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    padding: 20px;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.news-card p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.news-card h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.circle-image-news {
+    display: flex;
+    align-items: center;
+}
+
+.circle-image-news img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.circle-image-news h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.circle-image-news p3 {
+    font-size: 12px;
+}
+/* Appointment section */
+.appointment-section {
+    display: flex;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+}
+
+.appointment-section .appointment-left {
+    flex: 1;
+}
+
+.appointment-section img {
+    width: 80%;
+    height: 700px;
+    border-radius: 5px;
+    margin-left: 100px;
+
+}
+
+
+ .appointment-section .appointment-right {
+        flex: 1;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .appointment-section h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+
+    .appointment-section form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    label {
+        font-weight: 500;
+        margin-bottom: 5px;
+        align-items: center;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 300px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: -10px;
+        margin-right: 50px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+    .bottom-section {
+            background-image: url('map.png'); 
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .last-section {
+    background-color: #ffffff; 
+    padding: 30px 20px;
+    text-align: center;
+
+}
+
+
+.last-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.last-section .column {
+    flex: 1;
+    width: 20%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.last-section .column h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Lato', sans-serif
+}
+
+
+.last-section .column ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+
+.last-section .column img {
+    width: 32px; 
+    height: 32px;
+    margin: 5px;
+}
+
+.last-section hr {
+    border: none;
+    border-top: 1px solid rgb(252, 156, 91);
+    margin: 20px 0;
+    width: 1300px;
+    margin-left: 100px;
+}
+
+.last-section p {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Lato', sans-serif
+}
+
+        
+
+    </style>
+</head>
+<body></body>
+    <!-- Top section -->
+    <div class="top-section">
+        <h1>Welcome to Your Website</h1>
+    </div>
+
+ 
+    <div class="welcome-section">
+        <!-- Left column -->
+        <div class="welcome-left">
+            <h1>Welcome To Your Company Name</h1>
+            <p>A software house is a company that provides specialization primarily in software products, in either business or consumer software <br><br>based on the needs of their client base and structure for a software release</p>
+            <div class="circle-image">
+                
+            </div>
+        </div>
+        <div class="welcome-right">
+            <img src="cirl.jpeg" alt="Image in the right column"> 
+            <h2>Engr. Ahmed</h2>
+            <p>SQA Specialist, Software Engineer</p>
+        </div>
+        
+        <!-- Right column -->
+        <div class="welcome-left">
+            <img src="Left1.png" alt="Image in the right column"> <
+            
+        </div>
+    </div>
+    <!-- Our Engineers section -->
+    <div class="engineers-section">
+        <h1>Our Engineers</h1>
+    </div>
+    <div class="engineers-section">
+        <div class="engineer-card">
+            <img src="En1.jpg" alt="Engineer 1">
+            <h1>Engineer 1</h1>
+            <p>Software Engineer</p>
+            <div class="line"></div>
+            <p>+92 3780654265</p>
+            <p>iamengineer@gmail.com</p>
+        </div>
+        <div class="engineer-card">
+            <img src="En2.jpg" alt="Engineer 2">
+            <h1>Engineer 2</h1>
+            <p>Software Developer</p>
+            <div class="line"></div>
+            <p>+92 3780654265</p>
+            <p>iamengineer@gmail.com</p>
+        </div>
+        <div class="engineer-card">
+            <img src="En3.jpg" alt="Engineer 3">
+            <h1>Engineer 3</h1>
+            <p>Quality Assurance Engineer</p>
+            <div class="line"></div>
+            <p>+92 3780654265</p>
+            <p>iamengineer@gmail.com</p>
+        </div>
+    
+    </div>
+    <!-- Latest News section -->
+<div class="latest-news-section">
+    <h1>Latest News</h1>
+    <div class="news-card">
+        <img src="En2.jpg" alt="News Image 1">
+        <p>September 18, 2023.</p>
+        <h1>New Technology</h1>
+        <p>A software house is a company that provides specialization primarily in software products, in either</p>
+        <div class="circle-image-news">
+            <img src="p1.jpg" alt="Circle Image 1">
+            <h3>Engineer1</h3>
+            <p3>September 18, 2023</p3>
+        </div>
+    </div>
+    <div class="news-card">
+        <img src="En1.jpg" alt="News Image 2">
+        <p>September 17, 2023</p>
+        <h1>Ruby Language</h1>
+        <p>A software house is a company that provides specialization primarily in software products, in either</p>
+        <div class="circle-image-news">
+            <img src="p1.jpg" alt="Circle Image 2">
+            <h3>Engineer 2</h3> 
+            <p3>September 17, 2023</p3>
+        </div>
+    </div>
+    <div class="news-card">
+        <img src="En3.jpg" alt="News Image 3">
+        <p>September 16, 2023.</p>
+        <h1>Web Developer</h1>
+        <p>A software house is a company that provides specialization primarily in software products, in either</p>
+        <div class="circle-image-news">
+            <img src="p1.jpg" alt="Circle Image 3">
+            <h3>Engineer 3</h3>
+            <p3>September 16, 2023</p3>
+        </div>
+    </div>
+</div>
+<!-- Appointment Section -->
+<div class="appointment-section">
+    <div class="appointment-left">
+        <img src="app.png" alt="Appointment Image"> 
+    </div>
+    <div class="appointment-right">
+        <h1>Make an Appointment</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="department1">Department 1</option>
+                    <option value="department2">Department 2</option>
+                    <option value="department3">Department 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<div class="bottom-section">
+</div>
+<div class="last-section">
+    <div class="last-section-content">
+        <div class="column">
+            <h1>Company Name</h1>
+            <p>Company description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="column">
+            <h1>Services</h1>
+            <ul>
+                <li>Service 1</li>
+                <li>Service 2</li>
+                <li>Service 3</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h1>Company</h1>
+            <ul>
+                <li>About Us</li>
+                <li>Our Team</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h1>Support</h1>
+            <ul>
+                <li>Contact Us</li>
+                <li>FAQ</li>
+                <li>Customer Support</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h1>Follow Us</h1>
+            <img src="facebook-logo.png" alt="Facebook Logo">
+            <img src="twitter-logo.png" alt="Twitter Logo">
+            <img src="instagram-logo.png" alt="Instagram Logo">
+            <img src="linkedin-logo.png" alt="LinkedIn Logo">
+        </div>
+    </div>
+    <hr>
+    <p>&copy; 2023 Your Company. All Rights Reserved.</p>
+</div>
+
+
+   
+
+</body>
+</html>
